@@ -1,4 +1,4 @@
-const buttons = [1, 2, 3, "+", 4, 5, 6, "-", 7, 8, 9, "x", "clear", 0, "=", "/"];
+const buttons = [1, 2, 3, "+", 4, 5, 6, "-", 7, 8, 9, "*", "clear", "0", "=", "/"];
 const numpad = document.querySelector("#numpad");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -6,6 +6,18 @@ document.addEventListener("DOMContentLoaded", () => {
         const button = document.createElement("button");
         button.classList.add("button");
         button.textContent = buttonText;
+        if (parseInt(buttonText) || buttonText == 0) {
+            button.classList.add("number");
+        }
+        else if ("+-*/".includes(buttonText)) {
+            button.classList.add("operator");
+        }
+        else if (buttonText == "=") {
+            button.classList.add("equals");
+        }
+        else {
+            button.classList.add("clear");
+        };
         numpad.appendChild(button);
     });
 });
@@ -29,4 +41,5 @@ function multiply(a, b) {
 function divide(a, b) {
     return a / b;
 };
+
 

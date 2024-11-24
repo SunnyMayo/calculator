@@ -10,8 +10,8 @@ h1 {
     display: flex;
     flex-direction: column;
     background-color: #eee;
-    width: 400px;
-    height: 600px;
+    width: 420px;
+    height: 520px;
     margin: auto;
     margin-top: 50px;
     justify-content: space-evenly;
@@ -19,29 +19,57 @@ h1 {
 }
 
 #display {
-    width: 300px;
+    width: 400px;
     height: 100px;
     background-color: #15f488;
+    border-radius: 5px;
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
     color: darkgreen;
-    font-size: 36px;
+    font-size: 80px;
     text-align: end;
-    align-content: end;
-    padding: 10px;
+    padding-right: 10px;
 }
 
 #numpad {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 300px;
-    height: 300px;
+    justify-content: space-around;
+    width: 400px;
+    height: 400px;
 }
 
-.button {
-    width: 50px;
-    height: 50px;
-    background-color: #ccc;
-    margin: 10px;
+button {
+    width: 100px;
+    height: 80px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: black;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 32px;
+}
+
+.number {
+    background-color: rgba(43, 181, 235, 0.76);
+}
+
+.operator {
+    background-color: rgba(233, 142, 37, 0.815);
+}
+
+.applicator {
+    background-color: rgb(66, 255, 97);
+}
+
+.fraction {
+    background-color: rgba(10, 236, 225, 0.849);
+}
+
+.revert {
+    background-color: rgb(233, 68, 68);
+}
+
+#clear {
+    width: 200px;
 }

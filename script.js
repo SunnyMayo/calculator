@@ -150,13 +150,13 @@ function inputEquals() {
 function inputBackspace() {
     if (secondNum != null) {
         let removed = secondNum.slice(0, -1);
-        secondNum = removed;
+        displayValue = removed;
     }
     else if (firstNum != null && operator === null) {
         let removed = firstNum.slice(0, -1);
-        firstNum = removed;
+        displayValue = removed;
     }
-}
+};
 
 function add(a, b) {
     return a + b;
@@ -189,9 +189,9 @@ function operate(x, operator, y) {
         case '*':
             return multiply(x, y)
         case '/':
-            if (b === 0) return null
+            if (y === 0) return null
             else return divide(x, y)
         default:
             return null
     }
-}
+};

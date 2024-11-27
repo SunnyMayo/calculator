@@ -9,7 +9,7 @@ h1 {
 #calculator {
     display: flex;
     flex-direction: column;
-    background-color: #eee;
+    background-color: #777;
     width: 420px;
     height: 520px;
     margin: auto;

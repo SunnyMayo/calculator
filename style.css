@@ -62,14 +62,14 @@ button {
     background-color: rgb(66, 255, 97);
 }
 
-.fraction {
+.decimal, .percent {
     background-color: rgba(10, 236, 225, 0.849);
 }
 
-.revert {
+.back, .clear {
     background-color: rgb(233, 68, 68);
 }
 
-#clear {
+.clear {
     width: 200px;
 }

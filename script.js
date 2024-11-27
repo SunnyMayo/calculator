@@ -22,7 +22,7 @@ function buttonClick() {
         buttons[i].addEventListener('click', function() {
             if (buttons[i].classList.contains('number')) {
                 inputNumber(buttons[i].value);
-                updateDisplay;
+                updateDisplay();
             }
             else if (buttons[i].classList.contains('operator')) {
                 inputOperator(buttons[i].value);
@@ -50,6 +50,8 @@ function buttonClick() {
         }
     )}
 }
+
+buttonClick();
 
 function inputNumber(num) {
     if (firstNum === null) {

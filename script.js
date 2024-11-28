@@ -148,14 +148,8 @@ function inputEquals() {
 }
 
 function inputBackspace() {
-    if (secondNum != null) {
-        let removed = secondNum.slice(0, -1);
-        displayValue = removed;
-    }
-    else if (firstNum != null && operator === null) {
-        let removed = firstNum.slice(0, -1);
-        displayValue = removed;
-    }
+    let current = displayValue.slice(0, -1);
+    displayValue = current;
 };
 
 function add(a, b) {
